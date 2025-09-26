@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <base href="$FLUTTER_BASE_HREF">
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="A new Flutter project.">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="flutter_application_1">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png" />
+
+  <title>flutter_application_1</title>
+  <link rel="manifest" href="manifest.json">
+
+  <!-- CRITICAL: Google Sign-In Client ID - MUST be present for Flutter Web -->
+  <meta name="google-signin-client_id" content="686756139829-3kkm76dnuae6ugjrcenvh9dstv8mlb08.apps.googleusercontent.com">
+
+  <!-- Load Google Identity Services -->
+  <script src="https://accounts.google.com/gsi/client" async defer></script>
+
+  <script>
+    // Configuration to ensure ID token is included
+    window.addEventListener('load', function() {
+      console.log('✅ Page loaded, Google services initializing...');
+    });
+
+    // Handle Google credential responses
+    window.handleCredentialResponse = function(response) {
+      console.log('✅ Google credential response received');
+    };
+
+    // Suppress the GSI warning
+    const originalWarn = console.warn;
+    console.warn = function(message) {
+      if (typeof message === 'string' && 
+          (message.includes('GSI_LOGGER') || 
+           message.includes('gapi.client'))) {
+        return;
+      }
+      originalWarn.apply(console, arguments);
+    };
+  </script>
+
+</head>
+
+<body>
+  <script src="flutter_bootstrap.js" async></script>
+</body>
+
+</html>

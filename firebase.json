@@ -1,0 +1,38 @@
+{
+  "flutter": {
+    "platforms": {
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "warm-physics-470205-e0",
+          "configurations": {
+            "android": "1:686756139829:android:09707291c85a8d46d1f27c",
+            "ios": "1:686756139829:ios:a6b5cfd470ca7de0d1f27c",
+            "macos": "1:686756139829:ios:a6b5cfd470ca7de0d1f27c",
+            "web": "1:686756139829:web:aee30fe61f9141b6d1f27c",
+            "windows": "1:686756139829:web:aee30fe61f9141b6d1f27c"
+          }
+        }
+      },
+      "android": {
+        "default": {
+          "projectId": "warm-physics-470205-e0",
+          "appId": "1:686756139829:android:09707291c85a8d46d1f27c",
+          "fileOutput": "android/app/google-services.json"
+        }
+      }
+    }
+  },
+  "functions": [
+    {
+      "source": "functions",
+      "codebase": "default",
+      "ignore": [
+        "node_modules",
+        ".git",
+        "firebase-debug.log",
+        "firebase-debug.*.log",
+        "*.local"
+      ]
+    }
+  ]
+}

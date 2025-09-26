@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "686756139829",
+    "project_id": "warm-physics-470205-e0",
+    "storage_bucket": "warm-physics-470205-e0.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:686756139829:android:09707291c85a8d46d1f27c",
+        "android_client_info": {
+          "package_name": "com.example.flutter_application_1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "686756139829-iic59fnl68f67p1au9pq272g0b2rfjog.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.flutter_application_1",
+            "certificate_hash": "e5c0f7f8e0a0d649a593be445f23b1a7f66df19a"
+          }
+        },
+        {
+          "client_id": "686756139829-3kkm76dnuae6ugjrcenvh9dstv8mlb08.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDplyoJAfRH8eWvtHivkwMG6C8vnX1Fc4g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "686756139829-3kkm76dnuae6ugjrcenvh9dstv8mlb08.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "686756139829-35r3dhf45frh6omu3q829ose6momp50q.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.flutterApplication1"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
